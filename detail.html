@@ -1,0 +1,142 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGARAMA</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+
+     <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+
+    <!-- font google montserat-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- font google jaques-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+                <div class="logo">
+                    <img src="img/logo.svg" alt="Logo" >
+                </div>
+                <ul class="menu" >
+                    <li><a href="index.php">Beranda</a></li>
+                        <li><a href="objekWisata.php">Objek Wisata</a></li>
+                        <li><a href="tentangKami.html">Tentang Kami</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+    <div class="container">
+        <!-- <div class="title">DETAIL PAGE</div> -->
+        <h1 class="name"></h1>
+        <div class="detail">
+            <div class="image">
+                <img src="">
+            </div>
+            <div class="content">
+                <div class="title">Description</div>
+                <!-- <div class="buttons"> -->
+                    <!-- <button>Check Out</button> -->
+                    <!-- <button>Add To Cart 
+                        <span>
+                            <svg class="" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 15a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0h8m-8 0-1-4m9 4a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9-4h10l2-7H3m2 7L3 4m0 0-.792-3H1"/>
+                            </svg>
+                        </span>
+                    </button> -->
+                <!-- </div> -->
+                <div class="description"></div>
+            </div>
+        </div>
+        <div class="title">Location</div>
+        <div id="map"></div> 
+        <script src="script.js"></script>
+            <!-- <div class="map__location">
+                <Maps
+                    style={style}
+                    lat={post.location.lat}
+                    lon={post.location.lon}
+                    name={post.name}
+                    link={post.maps}
+                />
+            </div> -->
+        <!-- </div> -->
+        <div class="title">More Destination</div>
+        <div class="listProduct"></div>
+        
+        
+      
+      <script>
+        let products = null;
+        var id = null;
+        // get datas from file json
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                products = data;
+                showDetail();
+        })
+
+        function showDetail(){
+    // remove datas default from HTML
+        let detail = document.querySelector('.container');
+        let listProduct = document.querySelector('.listProduct');
+        let productId =  new URLSearchParams(window.location.search).get('id');
+        let thisProduct = products.filter(value => value.id == productId)[0];
+        //if there is no product with id = productId => return to home page
+        if(!thisProduct){
+            window.location.href = "/";
+        }
+
+        id = thisProduct.id;
+
+        var map = L.map('map', { zoomControl: false }).setView([thisProduct.lat, thisProduct.long], 17);
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var marker = L.marker([thisProduct.lat, thisProduct.long]).addTo(map);
+
+        detail.querySelector('.image img').src = thisProduct.image;
+        detail.querySelector('.name').innerText = thisProduct.name;
+        detail.querySelector('.description').innerText = thisProduct.description;
+
+
+        (products.filter(value => value.id != productId)).forEach(product => {
+            let newProduct = document.createElement('a');
+            newProduct.href = 'detail.html?id=' + product.id;
+            newProduct.classList.add('item');
+            newProduct.innerHTML = 
+            `<img src="${product.image}" alt="">
+            <h2>${product.name}</h2>
+            <p>${product.description}</p>`;
+            listProduct.appendChild(newProduct);
+        });
+    }
+      
+      </script>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <p>2024 PAGARAMA, All Rights Reserved.</p>
+        </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

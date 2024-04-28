@@ -1,0 +1,95 @@
+
+main .sectionAboutus{
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    /* margin: 50px auto; */
+    background-color: white;
+    border-radius: 5px;
+    /* margin-top: 80px; */
+  }
+
+  .menu a {
+      /* pointer-events: none; */
+      color: red;
+      text-decoration: none;
+    /* cursor: default; */
+  }
+  
+  main .sectionAboutus img {
+    max-width: 40%;
+  }
+  
+  #contentAboutus {
+    position: relative;
+  }
+  
+  main .aboutus h1 {
+    position: absolute;
+    /* top: 70px; */
+    /* left: 445px; */
+    text-align: center;
+    padding: 30px;
+    color: black;
+    
+    font-size: 100px;
+  }
+  
+  main .aboutus h1 span {
+    color: #000;
+  }
+  
+  .aboutusDescription {
+    flex-grow: 1;
+      padding: 50px;
+      padding-top: 200px;
+      text-align: justify;
+  }
+  
+  main .team{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 80px;
+  }
+  
+  main .sectionTeam {
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .team-card {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  .team-card img {
+    border: 5px solid #000;
+    border-radius: 100%;
+    max-height: 60%;
+  }
+  
+  .team-card-content h1{
+  font-size: 2.5em;
+  }
+  
+  .team-card-content h2{
+    margin-top: -10px;
+    font-size: 2em;
+  }
+  
+  .team-card-content {
+  padding: 10px;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 10px;
+  }

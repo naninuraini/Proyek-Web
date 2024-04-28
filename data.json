@@ -1,0 +1,133 @@
+[
+    {
+        "id": 1,
+        "name":"Desa Wisata Gunung Dempo",
+        "image": "img/foto1.png",
+        "lat": -4.037473,
+        "long": 103.194982,
+        "categories": [
+            "Wisata Alam",
+            "Gunung"
+          ],
+        "description": "Gunung Dempo terletak di perbatasan provinsi Sumatera Selatan dan provinsi Bengkulu tepatnya di kota dingin penghasil kopi robusta yang terkenal enak, yaitu Kota Pagaralam. Gunung Dempo terletak di kota Pagaralam, dengan jarak tempuh darat sekitar 7 jam dari Palembang, ibukota provinsi Sumatera Selatan."
+    },
+    {
+        "id": 2,
+        "name":"Rizal Camping Ground",
+        "image": "img/foto2.png",
+        "lat": -4.110044,
+        "long": 103.293509,
+        "categories": [
+            "Wisata Alam",
+            "Camping"
+          ],
+        "description": "Rizal Camping Ground (RCG) terletak di Desa Pelang Kenidai, Kecamatan Dempo Tengah, Kota Pagar Alam. Lokasinya hanya sekitar 30 menit perjalanan dari pusat Kota Pagar Alam, yang membuatnya sangat mudah dijangkau. Salah satu hal yang membuat RCG begitu menarik adalah keberadaan Air Terjun Curup Maung yang indah yang berdekatan dengan lokasi camping. Air terjun ini memang menawarkan pemandangan alam yang spektakuler yang akan memukau Anda."
+    },
+    {
+        "id": 3,
+        "name":"Dusun Camp Riverside Glamping",
+        "image": "img/foto3.png",
+        "lat": -4.0803,
+        "long": 103.185654,
+        "categories": [
+            "Wisata Alam",
+            "Camping"
+          ],
+        "description": "Dusun Camp terletak di Desa Gunung Agung Paoh, Kecamatan Dempo Utara, Pagar Alam. Lokasi ini sangat cocok bagi keluarga yang ingin berkemah di tepi sungai. Terletak sekitar 5-10 km dari pusat kota, Dusun Camp juga memiliki banyak fasilitas camping baik untuk personal maupun keluarga. Suasana di sini sangat nyaman dan damai, sehingga cocok untuk menghabiskan waktu berkualitas bersama orang-orang tercinta."
+    },
+    {
+        "id": 4,
+        "name":"Situs Megalithikum Tegurwangi",
+        "image": "img/foto4.png",
+        "lat": -4.045816,
+        "long": 103.208183,
+        "categories": [
+            "Wisata Sejarah"
+          ],
+        "description": "Lokasi situs ini terletak di Kec. Dempo Utara, Kota PagarAlam, yaitu berada di pinggir anak sungai dan di tengah sawah di desa Tegur wangi kecamatan Pagar Alam. Situs ini dialiri oleh dua buah sungai yakni sungai Geramat dan sungai Luang Kering. Temuan arkeologis berupa; menhir, tetralith, dolmen, arca, bilik batu, dan batu bergores."
+    },
+    {
+        "id": 5,
+        "name":"Situs Tanjung Aro",
+        "image": "img/foto5.png",
+        "lat": -4.004825,
+        "long": 103.236105,
+        "categories": [
+            "Wisata Sejarah"
+          ],
+        "description": "Di situs Tanjung Aro ini kubur batu berjumlah 2 buah dan letaknya berdampingan dengan bentuk dan ukurannya hampir sama. Kubur batu terbuat dari susunan lempengan batu membentuk sebuah ruang atau bilik dan terletak di bawah permukaan tanah, bilik tersebut memiliki ukuran a) lebar 1,33 m, panjang 1,74 m, tinggi 1,57 m dan b) lebar 0,70 m, panjang 0,85 m, tinggi 0,90 m.  Lempengan batu tersebut disusun menjadi sebuah dinding ruang dan atap."
+    },
+    {
+        "id": 6,
+        "name":"Air Terjun Lematang Indah",
+        "image": "img/foto6.png",
+        "lat": -4.072751,
+        "long": 103.321652,
+        "categories": [
+            "Wisata Alam",
+            "Air Terjun"
+          ],
+        "description": "Air terjun lematang indah adalah wisata andalan Kota Pagaralam. Terletak 10km dari pusat kota, di jalan raya Lahat - Pagaralam. Untuk mencapai air terjun, kita harus menuruni anak tangga dan menyeberangi sungai menggunakan ban. Pemandangan disekitar air terjun masih sangat hijau. Air sungainya jernih dengan bebatuan besar dan gosong sungai dengan pasir putih yang lembut."
+    },
+    {
+        "id": 7,
+        "name":"Curup Mangkok",
+        "image": "img/foto7.png",
+        "lat": -4.013306,
+        "long": 103.189089,
+        "categories": [
+            "Wisata Alam",
+            "Air Terjun"
+          ],
+        "description": "Curup Embun merupakan air terjun dengan pancuran air tertinggi di Pagar Alam. Tinggi pancurannya mencapai 100 meter dengan volume air yang tidak terlalu besar, sehingga air yang terjun dari puncak ketinggian ketika sampai bawah akan berubah menjadi embun. Itulah sebabnya air terjun ini disebut Curup Embun. Air dari ketinggian 100 meter tersebut kemudian mengalir dan tertampung di kolam alami yang ada di bawahnya. Di kolam yang dipenuhi bebatuan gunung inilah para wisatawan biasa menghabiskan waktunya untuk sekadar berendam dan bermain air. Dengan keunikan Air Terjun Curup Embun ini, tidak heran jika setiap liburan wisata ini selalu ramai kunjungi wisatawan."
+    },
+    {
+        "id": 8,
+        "name":"Curup Embun",
+        "image": "img/foto8.png",
+        "lat": -4.016074,
+        "long": 103.19534,
+        "categories": [
+            "Wisata Alam",
+            "Air Terjun"
+          ],
+        "description": "Curup Embun merupakan air terjun dengan pancuran air tertinggi di Pagar Alam. Tinggi pancurannya mencapai 100 meter dengan volume air yang tidak terlalu besar, sehingga air yang terjun dari puncak ketinggian ketika sampai bawah akan berubah menjadi embun. Itulah sebabnya air terjun ini disebut Curup Embun. Air dari ketinggian 100 meter tersebut kemudian mengalir dan tertampung di kolam alami yang ada di bawahnya. Di kolam yang dipenuhi bebatuan gunung inilah para wisatawan biasa menghabiskan waktunya untuk sekadar berendam dan bermain air. Dengan keunikan Air Terjun Curup Embun ini, tidak heran jika setiap liburan wisata ini selalu ramai kunjungi wisatawan."
+    },
+    {
+        "id": 9,
+        "name":"Air Terjun Napal Kuning",
+        "image": "img/foto9.png",
+        "lat": -4.017689,
+        "long": 103.184186,
+        "categories": [
+          "Wisata Alam",
+          "Air Terjun"
+          ],
+        "description": "Curup tujuh kenangan ini berlokasi di Dempo Makmur, desa talang, genteng, Kec. Pagar Alam Utara, Kota Pagar Alam, Sumatera Selatan. Sebelum sampai ke air terjun nya kita diharuskan melalui jalan setapak yang sudah dibuat. jalan nya berada ditengah-tengah pohon kopi dan bambu."
+    },
+    {
+        "id": 10,
+        "name":"Curup Tujuh Kenangan",
+        "image": "img/foto10.png",
+        "lat": -4.017689,
+        "long": 103.184186,
+        "categories": [
+          "Wisata Alam",
+          "Air Terjun"
+          ],
+        "description": "Curup tujuh kenangan ini berlokasi di Dempo Makmur, desa talang, genteng, Kec. Pagar Alam Utara, Kota Pagar Alam, Sumatera Selatan. Sebelum sampai ke air terjun nya kita diharuskan melalui jalan setapak yang sudah dibuat. jalan nya berada ditengah-tengah pohon kopi dan bambu."
+    },
+    {
+        "id": 11,
+        "name":"Air Terjun Penumpahan",
+        "image": "img/foto11.png",
+        "lat": -4.032349,
+        "long": 103.187129,
+        "categories": [
+          "Wisata Alam",
+          "Air Terjun"
+          ],
+        "description": "Air terjun Penumpahan ini terletak di Desa Dempo Rejo tepatnya dibelakang pabrik Teh Gunung Dempo, sumber air terjun Penumpahan ini berasal dari dinding bukit. Dengan tumbuhan hijau yang berada disekeliling air terjun tentu akan membuat air terjun Penumpahan ini sangat indah dipandang mata seperti air yang tumpah dibukit-bukit."
+    }
+
+]
